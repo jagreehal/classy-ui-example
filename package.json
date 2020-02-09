@@ -1,0 +1,26 @@
+{
+  "name": "classy-ui-example",
+  "scripts": {
+    "build": "NODE_ENV=production rimraf .parcel-cache  && rimraf dist && parcel build src/index.html",
+    "start": "NODE_ENV=development rimraf .parcel-cache && parcel src/index.html"
+  },
+  "dependencies": {
+    "classy-ui": "^2.0.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@fullhuman/postcss-purgecss": "^2.0.6",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "autoprefixer": "^9.7.4",
+    "parcel": "^2.0.0-alpha.3.2",
+    "postcss-cli": "^7.1.0",
+    "prettier": "^1.19.1",
+    "tailwindcss": "^1.2.0",
+    "typescript": "^3.7.5"
+  }
+}
