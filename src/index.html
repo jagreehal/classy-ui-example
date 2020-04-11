@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html class="h-full">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Tailwind</title>
+<html lang="en">
 
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body class="h-full m-4">
-    <div class="h-full" id="app"></div>
+<head>
+  <title>classy-ui-example</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="./index.tsx" charset="utf-8"></script>
-  </body>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <% if (htmlWebpackPlugin.options.isProduction){ %>
+  <link rel="stylesheet" href="classy-ui.css" />
+  <% } %>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
 </html>

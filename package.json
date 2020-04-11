@@ -1,26 +1,36 @@
 {
   "name": "classy-ui-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jag Reehal",
+  "license": "MIT",
+  "private": false,
   "scripts": {
-    "build": "NODE_ENV=production rimraf .parcel-cache  && rimraf dist && parcel build src/index.html",
-    "start": "NODE_ENV=development rimraf .parcel-cache && parcel src/index.html"
-  },
-  "dependencies": {
-    "classy-ui": "^2.0.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "start": "cross-env NODE_ENV=develop webpack-dev-server --open",
+    "build": "cross-env NODE_ENV=production webpack -p",
+    "serve": "http-server ./dist -c-1"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-react": "^7.8.3",
-    "@babel/preset-typescript": "^7.8.3",
-    "@fullhuman/postcss-purgecss": "^2.0.6",
-    "@types/react": "^16.9.19",
-    "@types/react-dom": "^16.9.5",
-    "autoprefixer": "^9.7.4",
-    "parcel": "^2.0.0-alpha.3.2",
-    "postcss-cli": "^7.1.0",
-    "prettier": "^1.19.1",
-    "tailwindcss": "^1.2.0",
-    "typescript": "^3.7.5"
+    "@babel/core": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "cross-env": "^7.0.2",
+    "html-webpack-plugin": "^4.2.0",
+    "http-server": "^0.12.1",
+    "prettier": "^2.0.4",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "classy-ui": "^11.0.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
